@@ -26,6 +26,7 @@
    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   
@@ -36,7 +37,7 @@
           repo: 'pinglunqu',
           owner: 'quectelfae',
           admin: ['quectelfae','MrVW'],
-          // id: '{{ page.url | truncate: 50, '' }}',
+          id: '{{ page.url | truncate: 50, '' }}',
           distractionFreeMode: false // Facebook-like distraction free mode
       })
       gitalk.render('gitalk-container')
