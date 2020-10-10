@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+	
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: ''
+    }
+  </script>
+  
+  <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+    <script>
+      const gitalk = new Gitalk({
+          clientID: 'a594823fdb012079c25f',
+          clientSecret: 'a0a4d1b09321d720f3506ecce66d2cadd6e6042d',
+          repo: 'QuectelModules.eng',
+          owner: 'quectelfae',
+          admin: ['quectelfae'],
+          // id: '{{ page.url | truncate: 50, '' }}',
+          distractionFreeMode: false // Facebook-like distraction free mode
+      })
+      gitalk.render('gitalk-container')
+  </script>
+  
+  
+</body>
+</html>
