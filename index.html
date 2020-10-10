@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   
-  <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
-	
+  
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
 </head>
 <body>
@@ -18,7 +18,7 @@
     window.$docsify = {
 		  loadSidebar: true,
 		coverpage: true,
-		name: 'Modules_User_Guide',
+		name: 'Modules_User_Guide'
     }
   </script>
   
@@ -32,17 +32,24 @@
   
     <script>
       const gitalk = new Gitalk({
-          clientID: 'd8ec958a5060707e56c8',
-          clientSecret: 'e0e8631a2f95a047f2d322a68ef8700dfac76f17',
-          repo: 'pinglunqu',
-          owner: 'quectelfae',
-          admin: ['quectelfae','MrVW'],
-          id: '{{ page.url | truncate: 50, '' }}',
+		   enable: true,
+          clientID: 'a594823fdb012079c25f',
+          clientSecret: 'a0a4d1b09321d720f3506ecce66d2cadd6e6042d',
+          repo: 'gitcomments',
+          owner: 'MrVW',
+		  labels: 'gitalk'
+          admin: ['MrVW'],
+		//  id: md5(location.pathname),
+        //  id: '{{ page.url | truncate: 50, '' }}',
           distractionFreeMode: false // Facebook-like distraction free mode
       })
       gitalk.render('gitalk-container')
   </script>
   
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
   
 </body>
 </html>
