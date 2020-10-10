@@ -32,6 +32,8 @@
   
     <script>
       const gitalk = new Gitalk({
+	  
+	  /***
 		   enable: true,
           clientID: 'a594823fdb012079c25f',
           clientSecret: 'a0a4d1b09321d720f3506ecce66d2cadd6e6042d',
@@ -39,6 +41,19 @@
           owner: 'MrVW',
 		  labels: 'gitalk'
           admin: ['MrVW'],
+		  
+	****/
+		  clientID: 'd1e35e52f8d36c380ed4',
+          clientSecret: '58eedbb8e031b43639054fd17b179af312f25ff6',
+          repo: 'pinglunqu',
+          owner: 'QuectelFAE',
+          admin: ['QuectelFAE'],
+          // id: '{{ page.url | truncate: 50, '' }}',
+          distractionFreeMode: false // Facebook-like distraction free mode
+		  
+		  
+		  
+		  
 		//  id: md5(location.pathname),
         //  id: '{{ page.url | truncate: 50, '' }}',
           distractionFreeMode: false // Facebook-like distraction free mode
