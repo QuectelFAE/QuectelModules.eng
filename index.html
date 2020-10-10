@@ -2,67 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <!-- 网站标题 -->
+  <title>Awesome Mac</title>
+  <!-- 网站icon -->
+  <link rel="icon" href="https://raw.githubusercontent.com/jaywcjlove/awesome-mac/master/build/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-  
-  
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-
+  <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css] -->
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <!-- Plugin gitalk -->
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 </head>
 <body>
-  <div id="app"></div>
+  <!-- loading显示的文字 -->
+  <div id="app">Loading...</div>
   <script>
     window.$docsify = {
-		  loadSidebar: true,
-		coverpage: true,
-		name: 'Modules_User_Guide'
+      // ************************* Configuration *************************
+      // https://docsify.js.org/#/zh-cn/configuration
+      homepage:
+      'https://raw.githubusercontent.com/jaywcjlove/awesome-mac/master/README-zh.md',
+      maxLevel:2,
+      loadNavbar: true,
+      mergeNavbar: true,
+      notFoundPage: true,
+      name: 'Awesome Mac',
+      repo: 'QuectelWB/awesome-mac-html',
+      auto2top: true,
+
+      // ************************* Plugins *************************
+      // https://docsify.js.org/#/zh-cn/plugins
+      // 全文搜索 - Search
+      search: 'auto',
     }
   </script>
-  
-
-   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  
-    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- ************************* Plugins ************************* -->
+  <!-- Plugins：全文搜索 -->
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <!-- Plugins：图片缩放 - Zoom image -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- Plugins：gitalk -->
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  
-    <script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
       const gitalk = new Gitalk({
-	  
-	  /***
-		   enable: true,
-          clientID: 'a594823fdb012079c25f',
-          clientSecret: 'a0a4d1b09321d720f3506ecce66d2cadd6e6042d',
-          repo: 'gitcomments',
-          owner: 'MrVW',
-		  labels: 'gitalk'
-          admin: ['MrVW'],
-		  
-	****/
-		  clientID: 'd1e35e52f8d36c380ed4',
+	/****
+          clientID: 'fefa769524832108f363',
+          clientSecret: '16f0b7cd40ca4ec12100c012387acef241affffa',
+          repo: 'pinglunqu',
+          owner: 'QuectelWB',
+          admin: ['QuectelWB'],
+	******/      
+	  clientID: 'd1e35e52f8d36c380ed4',
           clientSecret: '58eedbb8e031b43639054fd17b179af312f25ff6',
           repo: 'pinglunqu',
           owner: 'QuectelFAE',
           admin: ['QuectelFAE'],
+	      
           // id: '{{ page.url | truncate: 50, '' }}',
-          distractionFreeMode: false // Facebook-like distraction free mode
-		  
-		  
-		  
-		  
-		//  id: md5(location.pathname),
-        //  id: '{{ page.url | truncate: 50, '' }}',
           distractionFreeMode: false // Facebook-like distraction free mode
       })
       gitalk.render('gitalk-container')
   </script>
-  
-
-
-  
 </body>
 </html>
+
+
+
+
+
+
+
+
